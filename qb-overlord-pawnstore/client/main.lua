@@ -42,7 +42,7 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
 		end
 	else
 		QBCore.Functions.GetPlayerData(function(PlayerData)
-			if Player.PlayerData.job.name == CONFIG['JobName'] then
+			if PlayerData.job.name == CONFIG['JobName'] then
 				working = true
 				if loop_running < 1 then
 					mainLoop()
