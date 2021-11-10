@@ -59,7 +59,6 @@ AddEventHandler('onResourceStart', function(resource)
 			working = true
 			if loop_running < 1 then
 				mainLoop()
-				print('starting')
 			end
 		else
 			QBCore.Functions.GetPlayerData(function(PlayerData)
@@ -170,10 +169,6 @@ function mainLoop()
 	end
 	loop_running = loop_running - 1
 end
-
-
--- TriggerServerEvent("inventory:server:OpenInventory", "stash", CurrentApartment)
--- TriggerEvent("inventory:client:SetCurrentStash", CurrentApartment)
 
 Citizen.CreateThread(function()
 	Citizen.Wait(5000)
