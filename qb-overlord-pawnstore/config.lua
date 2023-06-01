@@ -1,11 +1,11 @@
-QBCore = exports['qb-core']:GetSharedObject() -- do not touch
+QBCore = exports['qb-core']:GetCoreObject() -- do not touch
 
 
 CONFIG = {} -- do not touch
 
 CONFIG['Debug'] = false
 
-CONFIG['Job'] = false -- if you want the menu to only be accessible by the below job
+CONFIG['Job'] = true -- if you want the menu to only be accessible by the below job
 CONFIG['JobName'] = 'pawnstore'
 
 CONFIG['Max'] = 10 -- maximum items to buy/sell at one time
